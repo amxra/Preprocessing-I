@@ -158,24 +158,50 @@ body {
   text-decoration: line-through;
   text-decoration-color: grey;
 }
-.about-me {
+.intro {
   padding: 2rem;
   background-color: #C8C8C8;
 }
-.about-me h1 {
+.intro h1 {
   font-size: 2rem;
   padding: 1rem;
 }
-.about-me p {
+.intro p {
   padding: 1rem;
 }
-.about-me img {
+.intro img {
   width: 30%;
   height: 30%;
 }
-.about-me button {
+.intro button {
   margin: 1rem;
   padding: 0.5rem;
   background: grey;
   color: white;
+  border: 1px solid grey;
+}
+.about-me {
+  height: 20rem;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  text-align: center;
+}
+.about-me .about-me-text {
+  width: 45%;
+  padding: 2rem;
+}
+.about-me .skills {
+  width: 45%;
+  padding: 2rem;
+}
+table {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
+}
+table td,
+table tr {
+  border: 1px solid black;
+  padding: 1rem;
 }

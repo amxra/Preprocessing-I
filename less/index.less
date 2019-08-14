@@ -60,10 +60,11 @@ html, body {
 /* My code */
 
 @desktopRootFontH1: 2rem;
+@centerDivVertically: 0 auto;
 
 .container{
 	width: 90%;
-	margin: 0 auto;
+	margin: @centerDivVertically;
 }
 
 .page-navigation{
@@ -91,7 +92,7 @@ html, body {
 }
 
 
-.about-me{
+.intro{
 	padding: 2rem;
 	background-color: #C8C8C8;
 
@@ -114,5 +115,36 @@ html, body {
 		padding: 0.5rem;
 		background: grey;
 		color: white;
+		border: 1px solid grey;
+	}
+}
+
+
+.about-me{
+	height: 20rem;
+	display: flex;
+	padding: 2rem;
+	justify-content: space-between;
+	text-align: center;
+
+	.about-me-text{
+		width: 45%;
+		padding: 2rem;
+	}
+
+	.skills{
+		width: 45%;
+		padding: 2rem;
+	}
+}
+
+table{
+	border: 1px solid black;
+	width: 100%;
+	margin: @centerDivVertically;
+
+	td,tr{
+		border: 1px solid black;
+		padding: 1rem;
 	}
 }
