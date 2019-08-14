@@ -59,16 +59,15 @@ html, body {
 
 /* My code */
 
-@redborder: 1px solid red;
 @linkDisplay: inline;
 @linkHoverDecoration: line-through;
+@DesktopH1Font: 2rem;
 
 
 .container{
 	width: 80%;
 	height: calc(100vh - 40px);
 	margin: 20px auto;
-	border: @redborder;
 	background-color: beige;
 }
 
@@ -80,10 +79,9 @@ html, body {
 }
 
 
-
 .logo{
 	width: 30%;
-	font-size: 32px;
+	font-size: @DesktopH1Font;
 }
 nav {
 	width: 70%;
@@ -91,6 +89,7 @@ nav {
 
 
 nav ul{
+	
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -103,14 +102,44 @@ nav ul{
 		color: black;
 		text-decoration: none;
 	}
-	&.:hover{
-		text-decoration: @linkHoverDecoration;
-		text-decoration-color: white;
+}
+
+nav ul li a:hover{
+	text-decoration: @linkHoverDecoration;
+	text-decoration-color: white;
+}
+
+.about-me{
+	border: 1px solid white;
+	width: 70%;
+	height: 70%;
+	margin: 5% auto;
+	border-radius: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5%;
+
+	.profile-image, .about-me-text{
+
+		width: 40%;
+		height: 70%;
+
 	}
 }
 
+.profile-image img{
+		width: 100%;
+		height: 100%
+}
 
+.about-me-text{
+	text-align: center;
+}
 
-
+.about-me-text p{
+		padding: 1rem;
+		line-height: 2rem;
+}
 
 
