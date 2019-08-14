@@ -61,6 +61,7 @@ html, body {
 
 @desktopRootFontH1: 2rem;
 @centerDivVertically: 0 auto;
+@tableTextAlignment:center;
 
 .container{
 	width: 90%;
@@ -123,13 +124,21 @@ html, body {
 .about-me{
 	height: 20rem;
 	display: flex;
-	padding: 2rem;
+	padding: 2rem 0;
 	justify-content: space-between;
 	text-align: center;
+	align-items: center;
+	margin: 2rem 0;
 
 	.about-me-text{
-		width: 45%;
-		padding: 2rem;
+		width: 50%;
+		padding:2rem;
+
+		h1{
+			font-size: @desktopRootFontH1; 
+			text-align: left;
+			padding: 1rem 0;
+		}
 	}
 
 	.skills{
@@ -138,13 +147,43 @@ html, body {
 	}
 }
 
+.about-me-text p{
+	line-height: 2rem;
+}
+
 table{
-	border: 1px solid black;
 	width: 100%;
 	margin: @centerDivVertically;
+	
 
 	td,tr{
-		border: 1px solid black;
+		border: 1px solid grey;
 		padding: 1rem;
+		text-align: @tableTextAlignment;
 	}
 }
+
+.work-history{
+	margin: 20px auto;
+}
+
+.work-history h1{
+		font-size: @desktopRootFontH1;
+		padding: 0 2rem;
+	
+}
+
+
+.work-history-table{
+		margin: 2rem;
+
+		td{
+			border: 0;
+			text-align: @tableTextAlignment;
+		}
+
+		tr.grey-row{
+			background-color: #C8C8C8;
+		}
+}
+

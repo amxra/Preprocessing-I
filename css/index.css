@@ -183,25 +183,52 @@ body {
 .about-me {
   height: 20rem;
   display: flex;
-  padding: 2rem;
+  padding: 2rem 0;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
+  margin: 2rem 0;
 }
 .about-me .about-me-text {
-  width: 45%;
+  width: 50%;
   padding: 2rem;
+}
+.about-me .about-me-text h1 {
+  font-size: 2rem;
+  text-align: left;
+  padding: 1rem 0;
 }
 .about-me .skills {
   width: 45%;
   padding: 2rem;
 }
+.about-me-text p {
+  line-height: 2rem;
+}
 table {
-  border: 1px solid black;
   width: 100%;
   margin: 0 auto;
 }
 table td,
 table tr {
-  border: 1px solid black;
+  border: 1px solid grey;
   padding: 1rem;
+  text-align: center;
+}
+.work-history {
+  margin: 20px auto;
+}
+.work-history h1 {
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+.work-history-table {
+  margin: 2rem;
+}
+.work-history-table td {
+  border: 0;
+  text-align: center;
+}
+.work-history-table tr.grey-row {
+  background-color: #C8C8C8;
 }
