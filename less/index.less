@@ -59,4 +59,58 @@ html, body {
 
 /* My code */
 
+@redborder: 1px solid red;
+@linkDisplay: inline;
+@linkHoverDecoration: line-through;
+
+
+.container{
+	width: 80%;
+	height: calc(100vh - 40px);
+	margin: 20px auto;
+	border: @redborder;
+	background-color: beige;
+}
+
+.page-header{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+}
+
+
+
+.logo{
+	width: 30%;
+	font-size: 32px;
+}
+nav {
+	width: 70%;
+}
+
+
+nav ul{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	ul li{
+		display: @linkDisplay;
+	}
+
+     a{
+		color: black;
+		text-decoration: none;
+	}
+	&.:hover{
+		text-decoration: @linkHoverDecoration;
+		text-decoration-color: white;
+	}
+}
+
+
+
+
+
 
