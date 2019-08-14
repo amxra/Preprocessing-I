@@ -158,3 +158,24 @@ body {
   text-decoration: line-through;
   text-decoration-color: grey;
 }
+.about-me {
+  padding: 2rem;
+  background-color: #C8C8C8;
+}
+.about-me h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.about-me p {
+  padding: 1rem;
+}
+.about-me img {
+  width: 30%;
+  height: 30%;
+}
+.about-me button {
+  margin: 1rem;
+  padding: 0.5rem;
+  background: grey;
+  color: white;
+}
