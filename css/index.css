@@ -142,6 +142,7 @@ body {
   width: 90%;
   margin: 0 auto;
   border: 3px solid #C8C8C8;
+  margin-top: 3rem;
 }
 .page-navigation {
   padding: 20px;
@@ -161,6 +162,11 @@ body {
 .page-navigation ul li a:hover {
   text-decoration: line-through;
   text-decoration-color: grey;
+}
+@media (max-width: 500px) and (max-width: 800px) {
+  .page-navigation {
+    width: 100%;
+  }
 }
 .intro {
   padding: 2rem;
