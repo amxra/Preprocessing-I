@@ -135,9 +135,13 @@ body {
   height: 100%;
 }
 /* My code */
+::selection {
+  background-color: #C8C8C8;
+}
 .container {
   width: 90%;
   margin: 0 auto;
+  border: 3px solid #C8C8C8;
 }
 .page-navigation {
   padding: 20px;
@@ -217,6 +221,8 @@ table tr {
 }
 .work-history {
   margin: 20px auto;
+  background-color: #C8C8C8;
+  padding: 1rem;
 }
 .work-history h1 {
   font-size: 2rem;
@@ -224,6 +230,8 @@ table tr {
 }
 .work-history-table {
   margin: 1rem;
+  width: 90%;
+  margin: 1rem auto;
 }
 .work-history-table td {
   border: 0;
@@ -249,4 +257,10 @@ table tr {
 .contact-me form input,
 .contact-me form textarea {
   margin: 0.5rem;
+}
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: #C8C8C8;
 }

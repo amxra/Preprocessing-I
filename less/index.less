@@ -59,6 +59,10 @@ html, body {
 
 /* My code */
 
+::selection{
+	background-color: #C8C8C8;
+}
+
 @desktopRootFontH1: 2rem;
 @centerDivVertically: 0 auto;
 @tableTextAlignment:center;
@@ -66,6 +70,7 @@ html, body {
 .container{
 	width: 90%;
 	margin: @centerDivVertically;
+	border: 3px solid #C8C8C8;
 }
 
 .page-navigation{
@@ -165,6 +170,8 @@ table{
 
 .work-history{
 	margin: 20px auto;
+	background-color: #C8C8C8;
+	padding: 1rem;
 }
 
 .work-history h1{
@@ -176,6 +183,8 @@ table{
 
 .work-history-table{
 		margin: 1rem;
+		width: 90%;
+		margin: 1rem auto;
 
 		td{
 			border: 0;
@@ -205,5 +214,12 @@ form{
 		margin: 0.5rem;
 	}
 }
+}
+
+footer{
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	background-color: #C8C8C8;
 }
 
