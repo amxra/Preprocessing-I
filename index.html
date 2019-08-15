@@ -14,6 +14,86 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+
+    <nav class="page-navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="intro">
+      <img src="images/mainimage.JPG" alt="profile image">
+      <h1>Amira Adediran - Full stack Engineer</h1>
+      <p>Tech is my jam!</p>
+      <hr>
+      <p>Ocassionally i have time to work on side projects, if you're interested, let me know by signing up on this website</p>
+      <button>Lets Team Up</button>
+    </section>
+
+    <section class="about-me">
+      <div class="about-me-text">
+        <h1>About me!</h1>
+        <p>Hi! I am Amira Adediran, an aspiring Fullstack developer. I absolutely enjoy building alluring UIs.I build responsive, interactive websites with HTML5, CSS3, Bootstrap, JavaScript and jQuery.Currently attending Lambda Schools </p>
+      </div>
+
+      <div class="skills">
+        <table>
+          <tr>
+            <td>Html</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="work-history">
+      <h1>Work History</h1>
+      <table class="work-history-table">
+        <tr>
+          <td>Years</td>
+          <td>Company</td>
+          <td>Title</td>
+          <td>Tech Used</td>
+        </tr>
+        <tr class="grey-row">
+          <td>1</td>
+          <td>Apple</td>
+          <td>Software Engineer</td>
+          <td>Swift</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Paystack</td>
+          <td>Software Engineer</td>
+          <td>JavaScript (MERN)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="contact-me">
+        <h1>Contact Me</h1>
+      <form action="#" method="POST" >
+        <input type="text" name="contact-name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="email" required>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder= "your message here" required></textarea>
+        <input type="submit" value="submit">
+      </form>
+    </section>
+
+    <footer>
+      <p>Made with ❤ Amira Adediran</p>  
+    </footer>
+    
+  </div> <!--Container closing div-->
 </body>
 </html>
